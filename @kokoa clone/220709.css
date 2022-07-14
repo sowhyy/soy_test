@@ -1,0 +1,31 @@
+#wrap {
+  border: 2px solid #000;
+  width: 300px;  height: 800px;
+  justify-content: center;
+  align-items: center;
+}
+#content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 50px;
+}
+#content div {
+  width: 100px;  height: 150px;
+  flex-wrap: wrap;
+}
+
+.a {
+  background-color: tomato;
+}
+.b{ 
+  background-color: teal;
+}
+.c { 
+  background-color: Burlywood;
+}
+.d { 
+  background-color: #D7BFD7;
+}

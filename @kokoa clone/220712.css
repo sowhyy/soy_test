@@ -1,0 +1,84 @@
+@charset "utf-8";
+* { padding: 0; margin: 0; }
+
+#wrap {
+  width: 500px;  height: 500px;
+  border: 2px solid #000;
+  background-color: #6bbcbe;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+span {
+  display: inline-block;
+  background: #fff;
+}
+
+.dot {
+  width: 100px;  height: 100px;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dot span {
+  width: 12px;  height: 12px;
+  border-radius: 50%;
+}
+
+
+.box {
+  width: 100px;  height: 120px;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+
+.box > span {
+  width: 12px;  height: 50px;
+}
+
+
+.dot {
+  animation-name: rotate;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+@keyframes rotate {
+  0% {  transform: rotate(0);  }
+  100% {  transform: rotate(360deg);  }
+}
+
+.box span {
+  animation: box_ani 1s ease-in-out infinite;
+}
+@keyframes box_ani {
+  0% {  transform: none;  }
+  25% {  transform: scaleY(2);  }
+  50% {  transform: scaleY(1);  }
+  100% {  transform: none;  }
+}
+
+
+.box span:first-child {
+  animation-delay: 0s;
+}
+.box span:nth-of-type(2) {
+  animation-delay: 0.1s;
+}
+.box span:nth-of-type(3) {
+  animation-delay: 0.3s;
+}
+.box span:nth-of-type(4) {
+  animation-delay: 0.45s;
+}
+.box span:nth-of-type(5) {
+  animation-delay: 0.5s;
+}
+
+
+/* name > duration > timing-function > delay > count > direction > fill-mode > play-state
+에니메이션 이름 > 재생 시간(실행 속도) > 속도 곡선 타입 > 딜레이 시간 > 반복 횟수 >  진행 방향 > 종료 후 위치 > 실행or정지 */
+

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="sowhy">
+  <meta name="description" content="explanation"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.4/dist/web/static/pretendard-dynamic-subset.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="shortcut icon" href="#">
+  <title>220707 Challenge</title>     
+  <!-- First name
+  Last name
+  Email
+  User name
+  Pass word
+  Birth day
+  How Happy are you?
+  What is your fav color?
+  Create Account -->
+  <body>
+    <form action="" method="get">
+      <fieldset>
+        <legend>Create An Account</legend>
+        <label for="firstname">First name</label>
+        <input id="firstname" required placeholder="First name" type="text"> <br/>
+        <label for="lastname">Last name </label>
+        <input id="lastname" required placeholder="Last name" type="text"> <br/>
+        <label for="email">Email</label>
+        <input id="email" required placeholder="Email" id="email" pattern="+@globe\.com" size="30" type="email"><br/>
+        <label for="username">User name</label>
+        <input id="username" required placeholder="Username" type="text" name="username"> <br/>
+        <label for="password">Pass word</label>
+        <input id="password" required placeholder="Password" type="password" name="password" minlength="10"> <br/>
+        <label for="birthday">Birth day</label>
+        <input id="birthday" required type="date" name="baby" min="2020-01-01" max="20530-12-31"><br/>
+        <label for="Happy">How Happy are you?</label>
+        <input id="Happy" type="range" list="tickmarks">
+          <datalist id="tickmarks">
+            <option value="0"></option>
+            <option value="10"></option>
+            <option value="20"></option>
+            <option value="30"></option>
+            <option value="40"></option>
+            <option value="50"></option>
+            <option value="60"></option>
+            <option value="70"></option>
+            <option value="80"></option>
+            <option value="90"></option>
+            <option value="100"></option>
+          </datalist> <br/>
+        <label for="color">What is your fav color? </label> 
+        <input id="color" type="color"> <br/>
+        <br/>
+        <input type="submit" value="Create Account">
+      </fieldset>
+    </form>
+  </body> 
+</html>
+
+
